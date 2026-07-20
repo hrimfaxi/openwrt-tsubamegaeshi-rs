@@ -46,6 +46,12 @@ define Package/tsubamegaeshi-rs/description
   caching, and Xray integration.
 endef
 
+define Package/tsubamegaeshi-rs/postinst
+#!/bin/sh
+[ -n "$${IPKG_INSTROOT}" ] || /etc/init.d/tsubamegaeshi-rs enable
+exit 0
+endef
+
 define Build/Configure
 	$(call Build/Configure/Default)
 	mkdir -p $(PKG_BUILD_DIR)/.cargo
