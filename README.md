@@ -87,6 +87,7 @@ ssh root@<router> "opkg install /tmp/tsubamegaeshi-rs_*.ipk"
 - `/etc/init.d/tsubamegaeshi-rs` — init 启动脚本
 - `/etc/capabilities/tsubamegaeshi-rs.json` — 权限声明
 - `/usr/libexec/update_tsubamegaeshi_files.sh` — 辅助更新脚本
+- `/etc/uci-defaults/tsubamegaeshi-rs` — 首次启动初始化脚本
 
 ## 许可证
 

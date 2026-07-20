@@ -82,6 +82,9 @@ define Package/tsubamegaeshi-rs/install
 
 	$(INSTALL_DIR) $(1)/usr/libexec
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/contrib/usr/libexec/update_tsubamegaeshi_files.sh $(1)/usr/libexec/
+
+	$(INSTALL_DIR) $(1)/etc/uci-defaults
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/contrib/etc/uci-defaults/luci-app-tsubamegaeshi-rs $(1)/etc/uci-defaults/
 endef
 
 $(eval $(call BuildPackage,tsubamegaeshi-rs))
