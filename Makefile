@@ -5,8 +5,7 @@ PKG_VERSION:=0.1.0
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
-#PKG_SOURCE_URL:=https://github.com/hrimfaxi/tsubamegaeshi-rs.git
-PKG_SOURCE_URL:=e470:tsubamegaeshi-rs.git
+PKG_SOURCE_URL:=https://github.com/hrimfaxi/tsubamegaeshi-rs.git
 PKG_SOURCE_VERSION:=HEAD
 
 PKG_LICENSE:=GPL-3.0
