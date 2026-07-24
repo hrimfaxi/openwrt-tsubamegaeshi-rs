@@ -12,25 +12,19 @@
 
 ## 编译步骤
 
-### 1. 添加 feed
+### 1. 克隆到 package 目录
 
-在 OpenWrt SDK 根目录下，将本仓库添加为自定义 feed：
+在 OpenWrt SDK 根目录下，将本仓库克隆到 `package/` 目录：
 
 ```bash
-# 编辑 feeds.conf.default，追加一行（根据实际路径调整）
-echo 'src-git tsubamegaeshi https://github.com/hrimfaxi/openwrt-tsubamegaeshi-rs.git' >> feeds.conf.default
-
-# 更新并安装 feed
-./scripts/feeds update tsubamegaeshi
-./scripts/feeds install tsubamegaeshi-rs
+cd openwrt-sdk-*
+git clone https://github.com/hrimfaxi/openwrt-tsubamegaeshi-rs.git package/tsubamegaeshi-rs
 ```
 
 如果使用本地仓库：
 
 ```bash
-echo "src-link tsubamegaeshi /path/to/openwrt-tsubamegaeshi-rs" >> feeds.conf.default
-./scripts/feeds update tsubamegaeshi
-./scripts/feeds install tsubamegaeshi-rs
+ln -s /path/to/openwrt-tsubamegaeshi-rs package/tsubamegaeshi-rs
 ```
 
 ### 2. 选择包
